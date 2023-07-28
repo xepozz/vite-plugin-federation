@@ -8,7 +8,12 @@ export default defineConfig({
     react(),
     federation({
       name: 'app',
-      remotes: {},
+      remotes: {
+        'App': 'http://localhost:5000/assets/remoteEntry.js',
+      },
+      exposes: {
+        './Dummy': './src/components/Dummy'
+      },
       shared: ['react','react-dom']
     })
   ],

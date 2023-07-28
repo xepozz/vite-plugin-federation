@@ -1,6 +1,7 @@
 import reactLogo from './assets/react.svg'
 import './App.css'
 import {RemoteButton} from "./RemoteComponent.jsx";
+import Button from "App/Dummy";
 
 function App() {
   return (
